@@ -129,3 +129,4 @@ class Loan(object):
     @staticmethod
     def annual_rate(monthly_rate):
         return monthly_rate * 12
+
