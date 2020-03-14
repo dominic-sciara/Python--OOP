@@ -1,5 +1,6 @@
 from Timer.timer import Timer
 from Loan.loans.loan_base import Loan
+from Asset.asset import Asset
 
 def main():
     t = Timer()
@@ -47,6 +48,11 @@ def main():
 
     print 'monthly rate to annual:', Loan.annual_rate(.01)
     print 'annual rate to monthly:', Loan.monthly_rate(.12)
+
+    print '#########################################'
+    a1 = Asset(10000)
+    print a1.current_value(13)
+
 
 
 if __name__ == '__main__':
