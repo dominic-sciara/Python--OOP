@@ -1,10 +1,13 @@
 from Timer.timer import Timer
 from Loan.loans.loan_base import Loan
 from Asset.asset import Asset
+from Loan.loans.loans import VariableRateLoan, FixedRateLoan
+from Loan.loans.mortgage_mixin import 
 
 def main():
     t = Timer()
     l = Loan(100000, .05, 30)
+    # print l.rate(5)
 
 
     print '\nmonthly payment:', l.monthly_pmt()
@@ -52,6 +55,11 @@ def main():
     print '#########################################'
     a1 = Asset(10000)
     print a1.current_value(13)
+
+    print '#######################'
+    vrl = FixedRateLoan(1000, .05, 120)
+    print vrl.rate
+
 
 
 

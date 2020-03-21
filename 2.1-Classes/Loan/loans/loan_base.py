@@ -37,13 +37,13 @@ class Loan(object):
     def term(self, i_term):
         self._term = i_term
 
-    @property
-    def rate(self):
-        return self._rate
+    # @property
+    # def rate(self):
+    #     return self._rate
     
-    @rate.setter
-    def rate(self, i_rate):
-        self._rate = i_rate
+    # @rate.setter
+    # def rate(self, i_rate):
+    #     self._rate = i_rate
 
 
     ##################
